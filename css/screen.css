@@ -1,0 +1,162 @@
+/* Stylesheet for ITMD 361 Project */
+/* Zachary Klima */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,main,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}
+
+/* The rest is written by me.
+   Using minor-third (1.2) modular scale
+     with a base of 1 em. */
+
+/* Theme handling.
+:root { 
+  --border1: #555599;
+  --nonblack: #222;
+  --nonwhite: #eee;
+
+  Spacing control.
+  --comfy1: 0.162em;
+}*/
+
+nav {
+  background-color: #333;
+  width: 100%;
+}
+
+nav ul {
+  text-align: center;
+  /* Centers elements in the nav bar. */
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 0.694em 1em 0.694em 1em;
+  margin: 0.162em 0.335em 0.162em 0.335em;
+  background-color: #404040;
+  display: block;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+}
+
+header {
+  margin: 1.44em 0 1.44em 2.986em;
+}
+h1 {
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 2.074em;
+  font-weight: 600;
+  color: #222;
+}
+
+#education, #prgrming, #workxp {
+  margin: 0 0 1em 1.44em;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 1em;
+}
+h2 {
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 1.728em;
+  font-weight: 200;
+  color: #222;
+  margin: 0 0 0.112em;
+}
+
+body {
+  background-color: #ddddee;
+  color: #222;
+}
+
+footer {
+  border: 0.162em solid #555599;
+  margin: 1.44em 0.482em 1em 0.482em;
+  padding: 0.162em;
+  font-family: Ariel, sans-serif;
+  font-size: 1.2em;
+}
+
+p {
+  margin: 0 0.402em 1em 0.402em;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+ul.resume1 {
+  list-style: square;
+  padding: 0.402em 0 0 1.2em;
+  line-height: 1.2em;
+  font-size: 1.2em;
+}
+ul.resume2 {
+  list-style: square;
+  padding: 0 0 0.482em 1.2em;
+  line-height: 1.2em;
+  font-size: 0.833em;
+}
+
+li.contact {
+  background-color: #eee;
+  border: 0.162em solid #555599;
+  box-shadow: 0.335em 0.335em 0.335em #555;
+  line-height: 1.44em;
+  margin: 0.402em 3.583em 0.402em 2.074em;
+  padding: 0.162em;
+}
+h3 {
+  font-family: Impact, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 0.1em;
+}
+#email, #phone {
+  font-family: monospace;
+  font-size: 1.2em;
+  padding: 0 0 0 1em;
+}
+
+figure {
+  text-align: center;
+}
+figcaption {
+  border: 0.335em solid #888;
+  box-shadow: 0.335em 0.335em 0.335em #222;
+  padding: 0.402em;
+  margin: 0.402em 0 1.2em 0;
+  font-family: monospace;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #555;
+}
+
+img {
+  max-width: 100%;
+  border: 0.162em solid #222;
+}
+#thebabe, #eleguitar {
+  text-align: center;
+  display: inline-block;
+  height: 20em;
+  margin: auto;
+}
+
+/* Media Queries */
+@media screen and (min-width: 37.453286222em) { /* ~600px given the modular scale */
+  header {
+    margin: 1.44em 0 1.44em 0;
+  }
+  h1 {
+    text-align: center;
+  }
+}
