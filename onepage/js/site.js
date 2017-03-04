@@ -5,7 +5,7 @@ $.noConflict();
   function($) {
     $(document).ready(function() {
     //$('#useradd').addClass('blinking');  Getting blinking text would involve pulling code I didn't make.
-      alert("ready");
+      //alert("ready");
       
 
 /* Don't want people turning off JS to get around validation, so I'll add a class that has to exist for the page to
@@ -13,17 +13,16 @@ $.noConflict();
 
       $('#signup').on('submit', function(e) {
         e.preventDefault(); //don't reload the page
-        var val = $('#useradd').val());
-        var regex = '^A-Z0-9amou
-        var isValid = return regex.test(val);
-        if(isValid === true) {
-          
+        var email = $('#useradd').val();
+        var regex = /^[A-Za-z0-9]\.@[A-Za-z0-9]\..[A-Za-z0-9]\{\3\}/; //Wrote this myself, which is probably why it doesn't work.
+        var isValid = regex.test(email); 
+        /*if(isValid === true) {
+          alert('cool');
         }
         else {
-          
-        }
+          alert('not cool');
+        }*/
       })
-
     })
   }
 )(jQuery);
