@@ -40,13 +40,13 @@ h2 {
 
 form {
   background-color: #31001D;
-  border: .1em solid #AD8D9C;
+  border: .135em solid #AD8D9C;
   color: #ccbbcc;
   font-family: 'Droid Sans Mono', 'Courier New', monospace;
   font-size: 1em;
-  line-height: 1.2em;
-  margin: 1em .3em 1em .3em;
-  padding: .2em;
+  line-height: 1.266em;
+  margin: 1em .308em 1em .308em;
+  padding: .192em;
 }
 
 a {
