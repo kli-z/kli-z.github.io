@@ -34,7 +34,8 @@ p {
 }
 
 h2 {
-
+  color: #00cccc;
+  font-size: 1.266em;
 }
 
 form {
@@ -48,18 +49,16 @@ form {
   padding: .2em;
 }
 
-input {
-  background-color: transparent;
-  border: none;
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  /* Inherits from <form>. */
-}
-
 a {
   color: #dec316;
 /*text-decoration: none;  Keeping distinction for color blindness. */
+}
+
+h3 {
+  color: #eee;
+  line-height: 1.125em;
+  padding: 1em 0 0 0;
+  text-indent: 1.266em;
 }
 
 #usersh { 
@@ -80,6 +79,25 @@ header {
   text-align: center;
 }
 
+input {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  /* Inherits from <form>. */
+}
+
+footer {
+  color: #eee;
+  font-style: italic;
+  padding: 0.273em;
+}
+
+#shame { /* Had to create another ID for one header just to fix padding problems stemming from poor planning. */
+  padding: 1em 0 0 0;
+}
+
 #IT {
   color: #b00090;
 }
@@ -90,7 +108,9 @@ header {
 }
 
 /* Comma delimited generalizations */
-
+h2, main {
+  font-family: Ubuntu, Verdana, sans-serif;
+}
 
 /* Media Queries */
 @media (min-width: 37.5em) { /* 600px @ 1em:16px */
